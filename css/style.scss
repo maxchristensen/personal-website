@@ -3,29 +3,72 @@
 
 // site colours'
 
-$pink: #9D5860;
-$brown: #3A2018;
-$white: #F7F7F2;
+$yellow: #f3de8a;
+$black: #272838;
+$white: #f9f8f8;
 
 // global reset
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: $pink;
+    background-color: $yellow;
 }
 
-
-// setting text
-
+// setting fonts
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Golos Text', sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
-    color: $brown;
+    color: $black;
 }
 
 p {
     font-family: 'IBM Plex Mono', monospace;
-    color: $white;
-    border: 5px solid $brown;
+    color: $black;
+}
+
+// logo
+.logo {
+    width: 10vw;
+    margin-left: 20px;
+}
+
+// --------- NAVIGATION STYLING ---------
+
+.nav-container {
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav-link {
+    display: flex; 
+    width: 50vw;
+    height: 33.3vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    border: 8px solid $black;
+}
+
+.nav-link p {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-link p:hover {
+    border-bottom: 8px solid $black;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
