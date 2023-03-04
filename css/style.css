@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=IBM+Plex+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #9D5860;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Golos Text", sans-serif;
+  text-transform: uppercase;
+  color: #3A2018;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  color: #F7F7F2;
+  border: 5px solid #3A2018;
+}/*# sourceMappingURL=style.css.map */
