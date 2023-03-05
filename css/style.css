@@ -24,9 +24,14 @@ p {
   color: #08080C;
 }
 
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
 .sidebar-container {
   display: flex;
-  float: left;
   width: 10vw;
   height: 100vh;
   z-index: 0;
@@ -34,15 +39,13 @@ p {
 
 .sidebar-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   rotate: -90deg;
-  width: 20rem;
-  margin-left: 70px;
 }
 
 .logo {
-  width: 10rem;
+  width: 100%;
 }
 
 .nav-container {
