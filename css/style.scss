@@ -33,19 +33,38 @@ p {
     color: $black;
 }
 
+// --------- SIDEBAR STYLING ---------
+.sidebar-container {
+    display: flex;
+    float: left;
+    width: 10vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.sidebar-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: -90deg;
+    width: 20rem;
+    margin-left: 70px;
+
+}
+
+.logo {
+    width: 10rem;
+}
+
 // --------- NAVIGATION STYLING ---------
 .nav-container {
     display: flex;
-    width: 100vw;
+    width: 70vw;
+    z-index: 1000;
 }
 
 .nav-sidebar{
-    display: flex;
-    width: 3vw;
-    height: 100vh;
-    rotate: -90deg;
-    justify-content: center;
-    align-items: center;
+    width: 10vw;
 }
 
 .nav-links {
@@ -68,7 +87,9 @@ p {
 }
 
 .nav-link p:hover {
-    border-bottom: 3px solid $black;
-    transition: all 0.5s ease;
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: $white;
+    text-decoration-thickness:4px ;
     cursor: pointer;
 }
