@@ -1,26 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #f3de8a;
+  background-color: #f9f8f8;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Golos Text", sans-serif;
-  font-weight: 700;
+h1, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   color: #272838;
 }
 
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #272838;
+  font-weight: 400;
+}
+
 p {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Playfair Display", serif;
   color: #272838;
 }
 
 .logo {
   width: 10vw;
-  margin-left: 20px;
+  margin-left: 15px;
+  padding: 15px;
 }
 
 .nav-container {
@@ -33,28 +40,41 @@ p {
 
 .nav-links {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
 }
 
 .nav-link {
   display: flex;
-  width: 50vw;
-  height: 33.3vh;
   align-items: center;
   justify-content: center;
-  font-size: 8rem;
-  border: 8px solid #272838;
+  font-size: 1rem;
+  margin: 0 50px 0 50px;
+}
+
+.margin-right {
+  margin-right: 75px;
 }
 
 .nav-link p {
-  font-family: "Golos Text", sans-serif;
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 .nav-link p:hover {
-  border-bottom: 8px solid #272838;
+  border-bottom: 3px solid #272838;
   transition: all 0.5s ease;
   cursor: pointer;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.introduction {
+  width: 700px;
+  line-height: 40px;
 }/*# sourceMappingURL=style.css.map */
