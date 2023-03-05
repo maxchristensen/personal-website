@@ -1,32 +1,31 @@
 // google fonts import
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,600&family=Poppins:wght@300;400;700&display=swap');
 
 // site colours'
-$yellow: #f3de8a;
-$black: #272838;
+$black: #08080C;
 $white: #f9f8f8;
+$red: #FF5C5C;
 
 // global reset
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: $white;
+    background-color: $red;
 }
 
 // setting fonts
-h1, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     color: $black;
 }
 
-h2 {
-    font-family: 'Poppins', sans-serif;
-    color: $black;
-    font-weight: 400;
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-style: italic;
 }
 
 p {
@@ -34,42 +33,36 @@ p {
     color: $black;
 }
 
-// logo
-.logo {
-    width: 10vw;
-    margin-left: 15px;
-    padding: 15px;
-}
-
 // --------- NAVIGATION STYLING ---------
-
 .nav-container {
     display: flex;
-    height: 10vh;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    width: 100vw;
+}
+
+.nav-sidebar{
+    display: flex;
+    width: 3vw;
+    height: 100vh;
+    rotate: -90deg;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: left;
+    height: 100vh;
+    margin-left: 50px;
 }
 
 .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    margin: 0 50px 0 50px;
-}
-
-.margin-right {
-    margin-right: 75px;
+    font-size: 9rem;
+    height: 30vh;
 }
 
 .nav-link p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -78,18 +71,4 @@ p {
     border-bottom: 3px solid $black;
     transition: all 0.5s ease;
     cursor: pointer;
-}
-
-// --------- INTRODUCTION SECTION STYLING ---------
-
-.intro-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.introduction {
-    width: 700px;
-    line-height: 40px;
 }
